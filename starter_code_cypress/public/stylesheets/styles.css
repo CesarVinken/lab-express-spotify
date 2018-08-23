@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.full-wrapper {
+  background-image: url("../images/blurred-background.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full-wrapper .form-container {
+  background-color: rgba(1, 1, 1, 0.4);
+  height: 260px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+.full-wrapper .form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.full-wrapper .form-container form #artist {
+  width: 280px;
+  border: none;
+  padding: 6px;
+  margin: 8px 0;
+}
+.full-wrapper .form-container form #submit {
+  color: white;
+  background-color: #c94b4b;
+  padding: 6px 18px;
+  border: none;
+  margin: 8px 0;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.container-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container-wrapper .cards-container {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.container-wrapper .cards-container .card-container {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  margin: 6px;
+}
+.container-wrapper .cards-container .card-container img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

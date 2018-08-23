@@ -1,0 +1,14 @@
+<div class="title-container">
+  <h1>{{this.originalQuery}}
+  </h1>
+</div>
+<div class="container-wrapper">
+  <div class="cards-container">
+    {{#each this.artists}}
+    <div class="card-container">
+      <img src={{images.[0].url}} alt="">
+      <h3>{{name}}</h3>
+      <a href='/album/{{id}}'>View Albums</a>
+    </div>{{/each}}
+  </div>
+</div>
