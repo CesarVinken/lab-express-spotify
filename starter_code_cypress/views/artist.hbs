@@ -4,11 +4,13 @@
 </div>
 <div class="container-wrapper">
   <div class="cards-container">
-    {{#each this.artists}}
+    {{#each this.artists}} {{#if images.[0]}}
     <div class="card-container">
-      <img src={{images.[0].url}} alt="">
-      <h3>{{name}}</h3>
+      <div class="img-container">
+        <img src={{images.[0].url}} alt="">
+      </div>
+      <h4>{{name}}</h4>
       <a href='/album/{{id}}'>View Albums</a>
-    </div>{{/each}}
+    </div>{{/if}}{{/each}}
   </div>
 </div>

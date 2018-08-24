@@ -1,5 +1,21 @@
-<h3>Title</h3>
-<h3>Listen</h3>
-{{#each this}}
-<p>{{name}}</p>
-{{/each}}
+<div class="background-wrapper">
+  <div class="track-content-container">
+    <div class="top-bar">
+      <h3>Title</h3>
+      <h3>Listen</h3>
+    </div>
+    <div class="tracks-container">
+      {{#each this}} {{#if this.name}}
+      <div class="track-container-wrapper">
+        <div class="track-container">
+          <div class="track-name">
+            <p>{{name}}</p>
+          </div>
+          <audio controls class="preview" src={{preview_url}} type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+      {{/if}} {{/each}}
+    </div>
+  </div>
+</div>

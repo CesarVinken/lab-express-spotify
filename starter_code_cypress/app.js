@@ -40,7 +40,6 @@ app.get("/artist", (req, res) => {
     .searchArtists(artist)
     .then(data => {
       const artists = data.body.artists.items;
-      console.log(artists[0].images);
       res.render("artist", { artists, originalQuery });
     })
     .catch(err => {
@@ -67,7 +66,6 @@ app.get("/track/:albumId", (req, res) => {
     .then(data => {
       console.log(data.body.items);
       const tracks = data.body.items;
-      // const artist = tracks[0].artists[0].name;
       const { name } = tracks;
       console.log(name);
 
